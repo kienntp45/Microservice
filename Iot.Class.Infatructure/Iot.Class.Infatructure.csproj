@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="AutoMapper" Version="11.0.1" />
+	  <PackageReference Include="AutoMapper.Extensions.ExpressionMapping" Version="5.0.2" />
+	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+	  <PackageReference Include="Iot.Core.DependencyInjection" Version="6.0.1" />
+	  <PackageReference Include="Iot.Core.EventBus" Version="6.0.4" />
+	  <PackageReference Include="Iot.Core.EventStore" Version="6.0.7" />
+	  <PackageReference Include="Iot.Core.Infrastructure" Version="6.0.3" />
+	  <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\Classes\" />
+    <Folder Include="Handlers\Commands\" />
+    <Folder Include="Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Iot.Class.Data\Iot.Class.Data.csproj" />
+  </ItemGroup>
+
+</Project>
